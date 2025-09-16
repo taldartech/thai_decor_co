@@ -16,6 +16,8 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <link rel="icon" href="assets/TDC_Green.png">
+
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
@@ -102,6 +104,8 @@
             align-items: center;
             position: relative;
             overflow: hidden;
+            background-image: url(assets/background.jpg);
+
         }
 
         .hero-content {
@@ -357,12 +361,20 @@
             opacity: 1;
             transform: translateY(0);
         }
+        .TDC_logo{
+            height: 2.5rem;
+        }
+
+        .text-show{
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8), -2px -2px 4px rgba(0,0,0,0.8), 0 0 10px rgba(0,0,0,0.7);
+        }
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
+            <img src="assets/TDC_Green.png" class="TDC_logo me-2" alt="">
             <a class="navbar-brand heading-font" href="#home">Thai Decor Collective</a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -389,8 +401,8 @@
                 <div class="col-lg-10">
                     <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
                         <div class="hero-logo mb-4">
-                            <div style="background: rgba(212, 175, 55, 0.2); border: 2px solid var(--primary-gold); border-radius: 50%; width: 120px; height: 120px; margin: 0 auto 2rem; display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 2.5rem; color: var(--primary-gold); backdrop-filter: blur(10px);">
-                                TDC
+                            <div>
+                                <img src="assets/TDC_Green.png" style="height:7.5rem;" alt="">
                             </div>
                         </div>
                         <h1 class="hero-title">Thai Decor Collective</h1>
@@ -500,33 +512,34 @@
             <h2 class="section-title" data-aos="fade-up">Past Events Gallery</h2>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="gallery-item">
-                        <div>Luxury Wedding - Bangkok</div>
+                    <div class="gallery-item" style="background-image: url(assets/luxury-wedding.jpg); background-size: cover;">
+                        
+                        <div class="text-white text-show">Luxury Wedding - Bangkok</div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="gallery-item">
-                        <div>Corporate Gala - Phuket</div>
+                    <div class="gallery-item " style="background-image: url(assets/corporate-gala.jpg); background-size: cover;">
+                        <div class="text-white text-show">Corporate Gala - Phuket</div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="gallery-item">
-                        <div>Traditional Thai Ceremony</div>
+                    <div class="gallery-item" style="background-image: url(assets/traditional-thai-ceremony.png); background-size: cover;">
+                        <div class="text-white text-show">Traditional Thai Ceremony</div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                    <div class="gallery-item">
-                        <div>Beach Resort Wedding</div>
+                    <div class="gallery-item " style="background-image: url(assets/phuket-beach.jpg); background-size: cover;">
+                        <div class="text-white text-show">Beach Resort Wedding</div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-                    <div class="gallery-item">
-                        <div>Royal Garden Reception</div>
+                    <div class="gallery-item" style="background-image: url(assets/royal-garden.webp); background-size: cover;">
+                        <div class="text-white text-show" >Royal Garden Reception</div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-                    <div class="gallery-item">
-                        <div>Intimate Anniversary</div>
+                    <div class="gallery-item" style="background-image: url(assets/intimate.jpg); background-size: cover;">
+                        <div class="text-white text-show" >Intimate Anniversary</div>
                     </div>
                 </div>
             </div>

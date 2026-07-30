@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thai Wedding Decor | Thai Decor Collective</title>
+    <title>Thai Event Planner | Thai Event Collective</title>
 
-    <link rel="canonical" href="https://thaidecor.co/">
-    <meta name="description" content="Thai wedding decorations, luxury Thai decor, floral installations & traditional Thai theme decor for weddings and corporate events across Thailand.">
-    <meta name="keywords" content="Thai Wedding Decorations, Thai Event Decorations, Traditional Thai Decor, Luxury Thai Decor, Thai Theme Decorations, Thai Floral Decorations, Thai Cultural Decorations, Thai Temple Decorations, Thai Stage Decorations, Thai Wedding Decor Company, Wedding Backdrop, Event Styling, Corporate Event Decorations, Venue Decorations, Destination Wedding Decor">
+    <link rel="canonical" href="https://thaidecor.co/thai-event-collective.html">
+    <meta name="description" content="Thai event planner for destination weddings, corporate events, MICE, gala dinners & conference management across Thailand.">
+    <meta name="keywords" content="Thai Event Planner, Thailand Event Management, Corporate Event Thailand, Luxury Event Planner, Wedding Planner Thailand, Destination Wedding Thailand, Event Organiser Thailand, Event Production Thailand, Conference Management Thailand, Product Launch, Corporate Retreat, Gala Dinner, MICE Events, Team Building Thailand, Incentive Travel, Exhibition Management">
     <meta name="robots" content="index,follow">
 
-    <meta property="og:title" content="Thai Wedding Decor | Thai Decor Collective">
-    <meta property="og:description" content="Thai wedding decorations, luxury Thai decor, floral installations & traditional Thai theme decor for weddings and corporate events across Thailand.">
-    <meta property="og:url" content="https://thaidecor.co/">
+    <meta property="og:title" content="Thai Event Planner | Thai Event Collective">
+    <meta property="og:description" content="Thai event planner for destination weddings, corporate events, MICE, gala dinners & conference management across Thailand.">
+    <meta property="og:url" content="https://thaidecor.co/thai-event-collective.html">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://thaidecor.co/assets/thai-decor-collective-logo.png">
+    <meta property="og:image" content="https://thaidecor.co/assets/thai-event-collective-logo.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Thai Wedding Decor | Thai Decor Collective">
-    <meta name="twitter:description" content="Thai wedding decorations, luxury Thai decor, floral installations & traditional Thai theme decor for weddings and corporate events across Thailand.">
-    <meta name="twitter:image" content="https://thaidecor.co/assets/thai-decor-collective-logo.png">
+    <meta name="twitter:title" content="Thai Event Planner | Thai Event Collective">
+    <meta name="twitter:description" content="Thai event planner for destination weddings, corporate events, MICE, gala dinners & conference management across Thailand.">
+    <meta name="twitter:image" content="https://thaidecor.co/assets/thai-event-collective-logo.png">
 
-    <link rel="preload" as="image" href="assets/thai-decor-collective-luxury-event-banner.webp" type="image/webp">
+    <link rel="preload" as="image" href="assets/thai-event-collective-destination-wedding-banner.webp" type="image/webp">
     
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -33,7 +33,7 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <link rel="icon" href="assets/thai-decor-collective-logo.png">
+    <link rel="icon" href="assets/thai-event-collective-logo.png">
 
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -114,7 +114,7 @@
         .hero-section {
             min-height: 100vh;
             background: linear-gradient(135deg, rgba(27, 54, 93, 0.8) 0%, rgba(44, 62, 80, 0.9) 100%), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23D4AF37" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="%23D4AF37" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="%23D4AF37" opacity="0.15"/><circle cx="10" cy="60" r="0.8" fill="%23D4AF37" opacity="0.12"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-             background-image: url(assets/thai-decor-collective-luxury-event-banner.webp);
+             background-image: url(assets/thai-event-collective-destination-wedding-banner.webp);
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -298,7 +298,6 @@
 
         /* Contact Section */
         .contact-section {
-            /* background: linear-gradient(135deg, var(--deep-blue) 0%, var(--elegant-navy) 100%); */
             background-color: #333333;
             color: white;
         }
@@ -344,11 +343,19 @@
 
         /* Footer */
         .footer {
-            /* background: var(--elegant-navy); */
             background-color: #333333;
             color: white;
             text-align: center;
             padding: 30px 0;
+        }
+
+        .sister-link {
+            color: #E6C547;
+            text-decoration: none;
+        }
+
+        .sister-link:hover {
+            color: var(--secondary-gold);
         }
 
         /* Responsive Design */
@@ -385,8 +392,11 @@
             opacity: 1;
             transform: translateY(0);
         }
-        .TDC_logo{
+        .TEC_logo {
             height: 2.75rem;
+            width: 2.75rem;
+            object-fit: contain;
+            border-radius: 50%;
         }
 
         .breadcrumb {
@@ -453,14 +463,14 @@
       }
 
     .floating-btn {
-        position: fixed;        /* stays visible while scrolling */
-        bottom: 20px;           /* distance from bottom */
-        right: 20px;            /* distance from right */
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
         width: 60px;
         height: 60px;
         color: #ffff;
         border: none;
-        border-radius: 50%;     /* makes it round */
+        border-radius: 50%;
         font-size: 28px;
         font-weight: bold;
         cursor: pointer;
@@ -471,7 +481,7 @@
     .floating-btn:hover {
         transform: scale(1.1);
         background: #25D366;
-        color: white; /* slightly darker golden */
+        color: white;
     }
       
     </style>
@@ -481,8 +491,8 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <img src="assets/thai-decor-collective-logo.webp" class="TDC_logo me-2" alt="Thai Decor Collective logo for luxury Thai wedding decorations">
-            <a class="navbar-brand heading-font" href="#home">Thai Decor Collective</a>
+            <img src="assets/thai-event-collective-logo.webp" class="TEC_logo me-2" alt="Thai Event Collective logo for destination wedding and corporate event planning">
+            <a class="navbar-brand heading-font" href="#home">Thai Event Collective</a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -496,7 +506,7 @@
                     <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="thai-event-collective.html">Thai Event Collective</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Thai Decor Collective</a></li>
                 </ul>
             </div>
         </div>
@@ -510,23 +520,25 @@
                     <nav aria-label="Breadcrumb" class="mb-4">
                         <ol class="breadcrumb justify-content-center mb-0">
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Thai Decor Collective</li>
+                            <li class="breadcrumb-item active" aria-current="page">Thai Event Collective</li>
                         </ol>
                     </nav>
                     <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
                         <div class="hero-logo mb-4">
-                            <div class="hero-brand-links">
-                                <a class="hero-brand-link" href="index.html" title="Thai Decor Collective">
-                                    <img src="assets/thai-decor-collective-logo.webp" alt="Thai Decor Collective logo for luxury Thai wedding decorations">
-                                </a>
-                                <a class="hero-brand-link" href="thai-event-collective.html" title="Thai Event Collective">
-                                    <img src="assets/thai-event-collective-logo.webp" alt="Thai Event Collective logo for destination wedding and corporate event planning">
-                                </a>
+                            <div>
+                                <div class="hero-brand-links">
+                                    <a class="hero-brand-link" href="index.html" title="Thai Decor Collective">
+                                        <img src="assets/thai-decor-collective-logo.webp" alt="Thai Decor Collective logo for luxury Thai wedding decorations">
+                                    </a>
+                                    <a class="hero-brand-link" href="thai-event-collective.html" title="Thai Event Collective">
+                                        <img src="assets/thai-event-collective-logo.webp" alt="Thai Event Collective logo for destination wedding and corporate event planning">
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <h1 class="hero-title heading-show">Thai Decor Collective</h1>
-                        <p class="hero-subtitle para-show">Luxury Thai decor, wedding decorations & traditional Thai theme styling for unforgettable occasions</p>
-                        <a href="https://calendly.com/team-thaidecor/30min" target="_blank" class="cta-button text-color" >
+                        <h1 class="hero-title heading-show">Thai Event Collective</h1>
+                        <p class="hero-subtitle para-show">Thai event planner for destination weddings, corporate events & luxury event production across Thailand</p>
+                        <a href="https://calendly.com/team-thaidecor/30min" target="_blank" class="cta-button text-color">
                             <i class="fas fa-calendar-check me-2"></i>Schedule a Call
                         </a>
                     </div>
@@ -540,16 +552,16 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <h2 class="section-title text-color" data-aos="fade-up">Luxury Thai Decor & Cultural Styling</h2>
+                    <h2 class="section-title text-color" data-aos="fade-up">Thailand Event Management Experts</h2>
                     <div class="about-content" data-aos="fade-up" data-aos-delay="200">
                         <p class="mb-4">
-                            Thai Decor Collective is a leading <span class="about-highlight">Thai wedding decor company</span> specializing in <span class="about-highlight">Thai event decorations</span>, traditional Thai decor, and luxury Thai theme decorations. Drawing inspiration from Thailand’s cultural heritage, we craft intricate designs that leave a lasting impression.
+                            Thai Event Collective is a full-service <span class="about-highlight">Thai event planner</span> and sister firm to <a href="index.html" class="sister-link">Thai Decor Collective</a>. We specialize in Thailand event management for weddings, corporate events, MICE, and luxury celebrations.
                         </p>
                         <p class="mb-4">
-                            From grand destination weddings to corporate events, our team delivers <span class="about-highlight">Thai floral decorations</span>, wedding backdrops, venue decorations, Thai stage decorations, temple décor, and custom floral installations that elevate every celebration.
+                            Whether you need a <span class="about-highlight">destination wedding Thailand</span> experience, a corporate retreat, gala dinner, product launch, or conference management Thailand, our team handles timelines, vendors, guest experience, and on-site execution.
                         </p>
                         <p>
-                            <em>"Setting the right tone for every occasion"</em> — our commitment is premium event styling and destination wedding decor that reflects authentic Thai artistry.
+                            <em>"Crafting unforgettable moments, one event at a time"</em> — trusted event organiser Thailand for couples, brands, and organizations seeking premium results.
                         </p>
                     </div>
                 </div>
@@ -557,124 +569,119 @@
         </div>
     </section>
 
-
-     
-
     <!-- Services Section -->
     <section id="services" class="section-padding">
         <div class="container">
-            <h2 class="section-title text-color" data-aos="fade-up">Thai Wedding & Event Decoration</h2>
+            <h2 class="section-title text-color" data-aos="fade-up">Corporate Events & Wedding Planning</h2>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-ring"></i>
                         </div>
-                        <h3 class="service-title">Thai Wedding Decorations</h3>
-                        <p>Complete Thai wedding décor including backdrops, floral installations, aisle styling, and ceremony design.</p>
+                        <h3 class="service-title">Wedding Planner Thailand</h3>
+                        <p>Full wedding planner Thailand services for destination wedding Thailand celebrations from concept to day-of.</p>
                     </div>
                 </div>
                 
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-card">
                         <div class="service-icon">
-                            <i class="fas fa-palette"></i>
+                            <i class="fas fa-briefcase"></i>
                         </div>
-                        <h3 class="service-title">Thai Theme Decorations</h3>
-                        <p>Traditional Thai decor and cultural decorations for authentic, elegant event styling.</p>
+                        <h3 class="service-title">Corporate Event Thailand</h3>
+                        <p>Corporate event Thailand planning for conferences, product launches, gala dinners, and brand experiences.</p>
                     </div>
                 </div>
                 
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="service-card">
                         <div class="service-icon">
-                            <i class="fas fa-spa"></i>
+                            <i class="fas fa-users"></i>
                         </div>
-                        <h3 class="service-title">Thai Floral Decorations</h3>
-                        <p>Luxury floral arrangements and statement floral installations for weddings and venues.</p>
+                        <h3 class="service-title">MICE & Incentive Travel</h3>
+                        <p>MICE events, incentive travel, team building Thailand, and exhibition management with end-to-end coordination.</p>
                     </div>
                 </div>
                 
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                     <div class="service-card">
                         <div class="service-icon">
-                            <i class="fas fa-place-of-worship"></i>
+                            <i class="fas fa-hotel"></i>
                         </div>
-                        <h3 class="service-title">Thai Temple & Stage Decor</h3>
-                        <p>Thai temple decorations and stage décor designed for ceremonies, receptions, and performances.</p>
+                        <h3 class="service-title">Corporate Retreat</h3>
+                        <p>Corporate retreat planning and luxury event planner support for leadership offsites and company gatherings.</p>
                     </div>
                 </div>
                 
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
                     <div class="service-card">
                         <div class="service-icon">
-                            <i class="fas fa-building"></i>
+                            <i class="fas fa-microphone"></i>
                         </div>
-                        <h3 class="service-title">Corporate Event Decorations</h3>
-                        <p>Venue decorations and luxury event styling for galas, launches, and corporate celebrations.</p>
+                        <h3 class="service-title">Event Production Thailand</h3>
+                        <p>Event production Thailand including staging, AV, lighting, and technical delivery for events of any scale.</p>
                     </div>
                 </div>
                 
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
                     <div class="service-card">
                         <div class="service-icon">
-                            <i class="fas fa-globe-asia"></i>
+                            <i class="fas fa-clipboard-check"></i>
                         </div>
-                        <h3 class="service-title">Destination Wedding Decor</h3>
-                        <p>Destination wedding décor ideas and full styling for beach, garden, and resort celebrations in Thailand.</p>
+                        <h3 class="service-title">Conference Management Thailand</h3>
+                        <p>Conference management Thailand with on-site event organiser Thailand support for seamless delivery.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
     <!-- Gallery Section -->
     <section id="gallery" class="gallery-section section-padding">
         <div class="container">
-            <h2 class="section-title text-color" data-aos="fade-up">Wedding Decor Ideas & Past Events</h2>
+            <h2 class="section-title text-color" data-aos="fade-up">Weddings, Galas & MICE Events</h2>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                     <div class="gallery-item">
-                        <img loading="lazy" decoding="async" src="assets/thai-luxury-wedding-decorations-bangkok.webp" alt="Luxury Thai wedding stage decorations and floral backdrop in Bangkok" width="585" height="390">
+                        <img loading="lazy" decoding="async" src="assets/thai-luxury-wedding-decorations-bangkok.webp" alt="Destination wedding Thailand celebration planned with luxury stage décor in Bangkok" width="585" height="390">
                         <div class="text-white text-show gallery-label">Luxury Wedding - Bangkok</div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="gallery-item">
-                        <img loading="lazy" decoding="async" src="assets/thai-corporate-event-decorations-gala-phuket.webp" alt="Corporate event decorations for a luxury gala dinner in Phuket" width="800" height="500">
+                        <img loading="lazy" decoding="async" src="assets/thai-corporate-event-decorations-gala-phuket.webp" alt="Corporate event Thailand gala dinner with luxury event production in Phuket" width="800" height="500">
                         <div class="text-white text-show gallery-label">Corporate Gala - Phuket</div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="gallery-item">
-                        <img loading="lazy" decoding="async" src="assets/traditional-thai-ceremony-decorations.webp" alt="Traditional Thai ceremony decorations with cultural floral styling" width="667" height="446">
+                        <img loading="lazy" decoding="async" src="assets/traditional-thai-ceremony-decorations.webp" alt="Wedding planner Thailand traditional ceremony event management and styling" width="667" height="446">
                         <div class="text-white text-show gallery-label">Traditional Thai Ceremony</div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                     <div class="gallery-item">
-                        <img loading="lazy" decoding="async" src="assets/thailand-destination-beach-wedding-decor.webp" alt="Destination beach wedding décor and Thai floral decorations in Thailand" width="300" height="168">
+                        <img loading="lazy" decoding="async" src="assets/thailand-destination-beach-wedding-decor.webp" alt="Destination wedding Thailand beach resort event organised by Thai Event Collective" width="300" height="168">
                         <div class="text-white text-show gallery-label">Beach Resort Wedding</div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
                     <div class="gallery-item">
-                        <img loading="lazy" decoding="async" src="assets/thai-wedding-stage-decoration-garden-reception.webp" alt="Thai wedding stage decoration for a royal garden reception" width="612" height="405">
+                        <img loading="lazy" decoding="async" src="assets/thai-wedding-stage-decoration-garden-reception.webp" alt="Event production Thailand garden reception stage decorations" width="612" height="405">
                         <div class="text-white text-show gallery-label">Royal Garden Reception</div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
                     <div class="gallery-item">
-                        <img loading="lazy" decoding="async" src="assets/intimate-luxury-thai-wedding-decor.webp" alt="Intimate luxury Thai wedding décor and temple-inspired styling" width="860" height="600">
-                        <div class="text-white text-show gallery-label">Intimate Anniversary</div>
+                        <img loading="lazy" decoding="async" src="assets/intimate-luxury-thai-wedding-decor.webp" alt="Corporate retreat and private luxury event styling in Thailand" width="860" height="600">
+                        <div class="text-white text-show gallery-label">Corporate Retreat</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    
     <!-- Testimonials Section -->
     <section id="testimonials" class="section-padding">
         <div class="container">
@@ -682,7 +689,7 @@
             <div class="row g-4">
                 <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="testimonial-card">
-                        <p class="testimonial-text">"Thai Decor Collective transformed our wedding into a fairy tale. Their attention to detail and understanding of Thai culture created the perfect atmosphere for our special day."</p>
+                        <p class="testimonial-text">"Thai Event Collective made our destination wedding stress-free from start to finish. Every timeline, vendor, and guest detail was handled with care — we simply enjoyed our day."</p>
                         <div class="testimonial-author">Sarah & Michael Johnson</div>
                         <div class="testimonial-role">Wedding Clients</div>
                     </div>
@@ -690,15 +697,15 @@
                 
                 <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="testimonial-card">
-                        <p class="testimonial-text">"The professionalism and creativity of the Thai Decor Collective team exceeded our expectations. Our corporate event was elegant, sophisticated, and perfectly executed."</p>
+                        <p class="testimonial-text">"Our annual corporate gala ran flawlessly. The Thai Event Collective team understood our brand, managed a complex AV setup, and delivered an event our executives were proud of."</p>
                         <div class="testimonial-author">David Chen</div>
-                        <div class="testimonial-role">Sr. Tech Consultant </div>
+                        <div class="testimonial-role">Sr. Tech Consultant</div>
                     </div>
                 </div>
                 
                 <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="testimonial-card">
-                        <p class="testimonial-text">"From the initial consultation to the final moment, every aspect was handled with grace and expertise. They truly understand the art of creating memorable experiences."</p>
+                        <p class="testimonial-text">"From the first planning call to the final toast, their team was responsive, organized, and genuinely invested in our celebration. We could not have asked for better partners."</p>
                         <div class="testimonial-author">Emma Rodriguez</div>
                         <div class="testimonial-role">Anniversary Celebration</div>
                     </div>
@@ -720,9 +727,9 @@
                                     <i class="fas fa-map-marker-alt contact-icon"></i>
                                     <div>
                                         <strong>Address</strong><br>
-                                        10 Ratsada Rd, Tambon Talat Nuea,<br>
-                                        Amphoe Mueang Phuket<br>
-                                        Chang Wat Phuket 83000, Thailand
+                                        4031 Sukhumvit Rd, Bang Na Nuea,<br>
+                                        Bang Na, Bangkok 10260, Thailand<br>
+                                        <a href="https://maps.app.goo.gl/t6EoPafiuRgUyfMp6" target="_blank" rel="noopener noreferrer" class="sister-link">Google Business Profile</a>
                                     </div>
                                 </div>
                                 
@@ -757,9 +764,6 @@
                     </div>
                     
                     <div class="text-center" data-aos="fade-up" data-aos-delay="400">
-                        <!-- <a href="https://wa.me/66811490924" class="whatsapp-button me-3">
-                            <i class="fab fa-whatsapp me-2"></i>WhatsApp Us
-                        </a> -->
                         <a href="https://calendly.com/team-thaidecor/30min" target="_blank" class="cta-button">
                             <i class="fas fa-phone me-2"></i>Schedule a Call
                         </a>
@@ -769,47 +773,47 @@
         </div>
     </section>
 
-    <a href="https://wa.me/66811490924" target="_blank" class="whatsapp-button floating-btn d-flex justify-content-center align-items-center text-decoration-none"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://wa.me/66811490924" target="_blank" class="whatsapp-button floating-btn d-flex justify-content-center align-items-center text-decoration-none" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
     <hr class="m-0">
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>Setting the right tone for every occasion.</p>
+            <p>Crafting unforgettable moments, one event at a time.</p>
             <div class="row text-start my-4">
                 <div class="col-12">
-                    <h5 class="mb-3" style="color:#E6C547;">Thai Decor Collective Services</h5>
+                    <h5 class="mb-3" style="color:#E6C547;">Thai Event Collective Services</h5>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a style="color:#E6C547; text-decoration:none;" href="decor/thai-wedding-decorations.html">Thai Wedding Decorations</a></li>
-                        <li class="mb-2"><a style="color:#E6C547; text-decoration:none;" href="decor/corporate-event-decorations.html">Corporate Event Decorations</a></li>
-                        <li class="mb-2"><a style="color:#E6C547; text-decoration:none;" href="decor/luxury-wedding-decorations.html">Luxury Wedding Decorations</a></li>
+                        <li class="mb-2"><a style="color:#E6C547; text-decoration:none;" href="events/corporate-events.html">Corporate Events</a></li>
+                        <li class="mb-2"><a style="color:#E6C547; text-decoration:none;" href="events/destination-weddings.html">Destination Weddings</a></li>
+                        <li class="mb-2"><a style="color:#E6C547; text-decoration:none;" href="events/product-launch.html">Product Launch</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a style="color:#E6C547; text-decoration:none;" href="decor/traditional-thai-decor.html">Traditional Thai Decor</a></li>
-                        <li class="mb-2"><a style="color:#E6C547; text-decoration:none;" href="decor/floral-decorations.html">Floral Decorations</a></li>
-                        <li class="mb-2"><a style="color:#E6C547; text-decoration:none;" href="decor/backdrop-design.html">Backdrop Design</a></li>
+                        <li class="mb-2"><a style="color:#E6C547; text-decoration:none;" href="events/conference-management.html">Conference Management</a></li>
+                        <li class="mb-2"><a style="color:#E6C547; text-decoration:none;" href="events/exhibition-management.html">Exhibition Management</a></li>
+                        <li class="mb-2"><a style="color:#E6C547; text-decoration:none;" href="events/brand-activation.html">Brand Activation</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a style="color:#E6C547; text-decoration:none;" href="decor/stage-decorations.html">Stage Decorations</a></li>
-                        <li class="mb-2"><a style="color:#E6C547; text-decoration:none;" href="decor/temple-decorations.html">Temple Decorations</a></li>
-                        <li class="mb-2"><a style="color:#E6C547; text-decoration:none;" href="decor/destination-wedding-decor.html">Destination Wedding Decor</a></li>
+                        <li class="mb-2"><a style="color:#E6C547; text-decoration:none;" href="events/private-events.html">Private Events</a></li>
+                        <li class="mb-2"><a style="color:#E6C547; text-decoration:none;" href="events/luxury-events.html">Luxury Events</a></li>
+                        <li class="mb-2"><a style="color:#E6C547; text-decoration:none;" href="events/event-production.html">Event Production</a></li>
                     </ul>
                 </div>
             </div>
             <p class="mb-2">
-                <a style="color:#E6C547; text-decoration:none;" href="faq.html">FAQ</a> ·
-                <a style="color:#E6C547; text-decoration:none;" href="partners.html">Partners</a> ·
+                <a style="color:#E6C547; text-decoration:none;" href="events/faq.html">FAQ</a> ·
+                <a style="color:#E6C547; text-decoration:none;" href="events/partners.html">Partners</a> ·
                 <a style="color:#E6C547; text-decoration:none;" href="media-kit.html">Media Kit</a> ·
-                Sister company: <a style="color:#E6C547; text-decoration:none;" href="thai-event-collective.html">Thai Event Collective</a>
+                Sister company: <a class="sister-link" href="index.html">Thai Decor Collective</a>
             </p>
-            <a style="color: #E6C547 ; text-decoration:none;" href="https://www.taldartechconsultancy.com/" target="_blank">Designed and Developed By Taldar Tech Consultancy</a>
+            <a style="color: #E6C547; text-decoration:none;" href="https://www.taldartechconsultancy.com/" target="_blank">Designed and Developed By Taldar Tech Consultancy</a>
         </div>
     </footer>
 
@@ -820,38 +824,44 @@
       "@graph": [
         {
           "@type": "LocalBusiness",
-          "@id": "https://thaidecor.co/#thai-decor-collective",
-          "name": "Thai Decor Collective",
-          "url": "https://thaidecor.co/",
-          "logo": "https://thaidecor.co/assets/thai-decor-collective-logo.webp",
-          "image": "https://thaidecor.co/assets/thai-decor-collective-luxury-event-banner.webp",
+          "@id": "https://thaidecor.co/#thai-event-collective",
+          "name": "Thai Event Collective",
+          "url": "https://thaidecor.co/thai-event-collective.html",
+          "logo": "https://thaidecor.co/assets/thai-event-collective-logo.webp",
+          "image": "https://thaidecor.co/assets/thai-event-collective-destination-wedding-banner.webp",
           "telephone": "+66 81-149-0924",
           "email": "team@thaidecor.co",
-          "description": "Thai wedding decorations, luxury Thai decor, traditional Thai theme decorations, floral installations and venue styling across Thailand.",
+          "description": "Thai event planner for destination weddings, corporate events, MICE, conference management and event production across Thailand.",
           "knowsAbout": [
-            "Thai Wedding Decorations",
-            "Thai Event Decorations",
-            "Traditional Thai Decor",
-            "Luxury Thai Decor",
-            "Thai Theme Decorations",
-            "Thai Floral Decorations",
-            "Thai Cultural Decorations",
-            "Thai Temple Decorations",
-            "Thai Stage Decorations",
-            "Destination Wedding Decor"
+            "Thai Event Planner",
+            "Thailand Event Management",
+            "Corporate Event Thailand",
+            "Luxury Event Planner",
+            "Wedding Planner Thailand",
+            "Destination Wedding Thailand",
+            "Event Organiser Thailand",
+            "Event Production Thailand",
+            "Conference Management Thailand",
+            "MICE Events",
+            "Gala Dinner",
+            "Corporate Retreat",
+            "Team Building Thailand"
+          ],
+          "sameAs": [
+            "https://maps.app.goo.gl/t6EoPafiuRgUyfMp6"
           ],
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "10 Ratsada Rd, Tambon Talat Nuea",
-            "addressLocality": "Amphoe Mueang Phuket",
-            "addressRegion": "Chang Wat Phuket",
-            "postalCode": "83000",
+            "streetAddress": "4031 Sukhumvit Rd, Bang Na Nuea",
+            "addressLocality": "Bang Na",
+            "addressRegion": "Bangkok",
+            "postalCode": "10260",
             "addressCountry": "TH"
           }
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://thaidecor.co/#breadcrumb",
+          "@id": "https://thaidecor.co/thai-event-collective.html#breadcrumb",
           "itemListElement": [
             {
               "@type": "ListItem",
@@ -862,8 +872,8 @@
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Thai Decor Collective",
-              "item": "https://thaidecor.co/"
+              "name": "Thai Event Collective",
+              "item": "https://thaidecor.co/thai-event-collective.html"
             }
           ]
         }
@@ -878,7 +888,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <script>
-        // Initialize AOS
         AOS.init({
             duration: 800,
             easing: 'ease-in-out',
@@ -886,7 +895,6 @@
             offset: 100
         });
 
-        // Navbar scroll effect
         window.addEventListener('scroll', function() {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 100) {
@@ -898,7 +906,6 @@
             }
         });
 
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -912,7 +919,6 @@
             });
         });
 
-        // Mobile navigation close on click
         document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
             link.addEventListener('click', () => {
                 const navbarCollapse = document.querySelector('.navbar-collapse');

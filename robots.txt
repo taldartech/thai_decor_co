@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thaidecor.co/sitemap.xml
+Sitemap: https://thaidecor.co/image-sitemap.xml
+
+# AI discovery
+# https://thaidecor.co/llms.txt
+# https://thaidecor.co/llms-full.txt

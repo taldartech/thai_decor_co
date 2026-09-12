@@ -21,6 +21,10 @@ Public URL:
 
 `https://thaidecor.co/llms.txt`
 
+Sister brand (separate domain):
+
+`https://thaievent.co/llms.txt`
+
 ## Purpose of `llms-full.txt`
 
 `llms-full.txt` is a fuller inventory of major public pages, grouped into sections:

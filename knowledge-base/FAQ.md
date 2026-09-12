@@ -406,7 +406,7 @@ Thai Event Collective maps link: https://maps.app.goo.gl/t6EoPafiuRgUyfMp6
 2026.
 
 ### What is the website?
-https://thaidecor.co/ (Decor) and https://thaidecor.co/thai-event-collective.html (Event).
+https://thaidecor.co/ (Decor) and https://thaievent.co/ (Event).
 
 ---
 

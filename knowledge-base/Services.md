@@ -246,14 +246,14 @@ Temple-inspired celebrations require sensitivity. Décor should support reverenc
 
 # Part B — Thai Event Collective
 
-Website: https://thaidecor.co/thai-event-collective.html  
+Website: https://thaievent.co/  
 Sister décor partner: Thai Decor Collective
 
 ---
 
 ## Service: Destination Weddings (Planning)
 
-**URL:** https://thaidecor.co/events/destination-weddings.html
+**URL:** https://thaievent.co/events/destination-weddings.html
 
 **Description:**  
 Thailand offers beaches, gardens, rooftops, and heritage venues. The team manages vendor selection, guest communication support, ceremony flow, reception production, and day-of coordination. Destination weddings often include welcome dinners, ceremonies, receptions, and brunch events.
@@ -280,7 +280,7 @@ Thailand offers beaches, gardens, rooftops, and heritage venues. The team manage
 
 ## Service: Corporate Events
 
-**URL:** https://thaidecor.co/events/corporate-events.html
+**URL:** https://thaievent.co/events/corporate-events.html
 
 **Description:**  
 Thailand event management for companies hosting conferences, leadership meetings, gala dinners, partner summits, and incentive programs—timelines, vendor networks, AV production, and on-site operations.
@@ -303,7 +303,7 @@ Thailand event management for companies hosting conferences, leadership meetings
 
 ## Service: Conference Management
 
-**URL:** https://thaidecor.co/events/conference-management.html
+**URL:** https://thaievent.co/events/conference-management.html
 
 **Description:**  
 Agenda architecture and operational delivery for half-day executive briefings through multi-track industry summits—associations, corporations, institutions, and hybrid conferences.
@@ -328,7 +328,7 @@ Agenda architecture and operational delivery for half-day executive briefings th
 
 ## Service: Product Launch
 
-**URL:** https://thaidecor.co/events/product-launch.html
+**URL:** https://thaievent.co/events/product-launch.html
 
 **Description:**  
 Built on three pillars: Story (messaging/stage), Experience (décor/interaction/hospitality), and Proof (demo/sampling/endorsement). Industries include lifestyle, beauty, tech, automotive, hospitality, and consumer—from intimate editor previews to high-energy activations to executive unveilings.
@@ -350,7 +350,7 @@ Built on three pillars: Story (messaging/stage), Experience (décor/interaction/
 
 ## Service: Brand Activation
 
-**URL:** https://thaidecor.co/events/brand-activation.html
+**URL:** https://thaievent.co/events/brand-activation.html
 
 **Description:**  
 Experiential programmes aimed at trial, social sharing, data capture, or community building—in malls, waterfronts, cultural districts, resorts, and conference side-spaces. Scales from invitation-only premium to high-throughput consumer.
@@ -374,7 +374,7 @@ Experiential programmes aimed at trial, social sharing, data capture, or communi
 
 ## Service: Exhibition Management
 
-**URL:** https://thaidecor.co/events/exhibition-management.html
+**URL:** https://thaievent.co/events/exhibition-management.html
 
 **Description:**  
 Booth operations and on-site command for technology, travel, education, lifestyle, F&B, and B2B exhibitors—full booth programme or on-site command only.
@@ -397,7 +397,7 @@ Booth operations and on-site command for technology, travel, education, lifestyl
 
 ## Service: Event Production
 
-**URL:** https://thaidecor.co/events/event-production.html
+**URL:** https://thaievent.co/events/event-production.html
 
 **Description:**  
 Staging, lighting, sound, content playback, and cue discipline. Technical recon covers power, rigging, load-in, and acoustics; outdoor programmes include weather, generator, and redundancy planning.
@@ -422,7 +422,7 @@ Staging, lighting, sound, content playback, and cue discipline. Technical recon 
 
 ## Service: Private Events
 
-**URL:** https://thaidecor.co/events/private-events.html
+**URL:** https://thaievent.co/events/private-events.html
 
 **Description:**  
 Intimate celebrations for anniversaries, birthdays, family reunions, intimate weddings, and VIP dinners—often with elders, children, international relatives, or high-profile guests. Budget focus on fewer, higher-impact details (florals, lighting, gifts, service choreography).
@@ -444,7 +444,7 @@ Intimate celebrations for anniversaries, birthdays, family reunions, intimate we
 
 ## Service: Luxury Events
 
-**URL:** https://thaidecor.co/events/luxury-events.html
+**URL:** https://thaievent.co/events/luxury-events.html
 
 **Description:**  
 Luxury events are judged by consistency. Every interaction, from invitation to farewell gift, should feel intentional. Materials, talent, service timing, and guest privacy matter. White-glove staffing; operations invisible to guests.

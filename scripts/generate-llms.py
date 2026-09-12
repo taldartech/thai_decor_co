@@ -23,13 +23,14 @@ ROOT = Path(__file__).resolve().parents[1]
 BASE_URL = "https://thaidecor.co"
 SITE_LANGUAGE = "en"
 SITE_COUNTRY = "Thailand"
-PRIMARY_INDUSTRY = "Event décor and event management"
-BUSINESS_TYPE = "Local business / sister brand collective"
+PRIMARY_INDUSTRY = "Event décor"
+BUSINESS_TYPE = "Local business"
 PRIMARY_AUDIENCE = "Couples, corporate hosts, wedding planners, hotels and venues"
 MAX_PER_SECTION = 50
 
 IGNORE_DIR_NAMES = {
     ".git",
+    "events",
     "node_modules",
     "vendor",
     "admin",
@@ -44,6 +45,7 @@ IGNORE_DIR_NAMES = {
 IGNORE_FILE_PATTERNS = (
     re.compile(r"(^|/)(login|register|admin|dashboard)(/|$|\.)", re.I),
     re.compile(r"(^|/)api(/|$)", re.I),
+    re.compile(r"(^|/)thai-event-collective\.html$", re.I),
 )
 
 
@@ -130,16 +132,12 @@ def build_sections() -> List[Section]:
         Section(
             key="about",
             heading="About",
-            matcher=lambda p: p.path in {"/", "/thai-event-collective.html", "/media-kit.html"},
+            matcher=lambda p: p.path in {"/", "/media-kit.html"},
         ),
         Section(
             key="services",
             heading="Services",
-            matcher=lambda p: p.path.startswith("/decor/")
-            or (
-                p.path.startswith("/events/")
-                and not path_contains(p, "/faq", "/partners")
-            ),
+            matcher=lambda p: p.path.startswith("/decor/"),
         ),
         Section(
             key="blog",
@@ -174,7 +172,7 @@ def build_sections() -> List[Section]:
         Section(
             key="gallery",
             heading="Gallery",
-            matcher=lambda p: path_contains(p, "/gallery") or p.path in {"/", "/thai-event-collective.html"},
+            matcher=lambda p: path_contains(p, "/gallery") or p.path in {"/"},
         ),
         Section(
             key="locations",
@@ -184,7 +182,7 @@ def build_sections() -> List[Section]:
         Section(
             key="resources",
             heading="Resources",
-            matcher=lambda p: p.path in {"/media-kit.html", "/partners.html", "/events/partners.html"}
+            matcher=lambda p: p.path in {"/media-kit.html", "/partners.html"}
             or path_contains(p, "/resources"),
         ),
         Section(
@@ -195,18 +193,18 @@ def build_sections() -> List[Section]:
         Section(
             key="testimonials",
             heading="Testimonials",
-            matcher=lambda p: path_contains(p, "testimonial") or p.path in {"/", "/thai-event-collective.html"},
+            matcher=lambda p: path_contains(p, "testimonial") or p.path in {"/"},
         ),
         Section(
             key="contact",
             heading="Contact",
-            matcher=lambda p: path_contains(p, "contact") or p.path in {"/", "/thai-event-collective.html"},
+            matcher=lambda p: path_contains(p, "contact") or p.path in {"/"},
         ),
         # Future-ready placeholders (empty until pages exist)
         Section(key="whitepapers", heading="Whitepapers", matcher=lambda p: path_contains(p, "whitepaper")),
         Section(key="downloads", heading="Downloads", matcher=lambda p: path_contains(p, "download")),
         Section(key="videos", heading="Videos", matcher=lambda p: path_contains(p, "/video")),
-        Section(key="events_calendar", heading="Events", matcher=lambda p: p.path.startswith("/events/") is False and path_contains(p, "/event-calendar", "/upcoming-events")),
+        Section(key="events_calendar", heading="Events", matcher=lambda p: path_contains(p, "/event-calendar", "/upcoming-events")),
         Section(key="products", heading="Products", matcher=lambda p: path_contains(p, "/product/") and "product-launch" not in p.path),
         Section(key="team", heading="Team Members", matcher=lambda p: path_contains(p, "/team", "/about-team")),
     ]
@@ -221,8 +219,8 @@ def pages_for_section(section: Section, pages: Iterable[Page]) -> List[Page]:
 def metadata_block(generated: str) -> str:
     return "\n".join(
         [
-            f"Website Name: Thai Decor Collective & Thai Event Collective",
-            f"Website Description: Luxury Thai wedding decorations and full-service event planning for destination weddings, corporate events and celebrations across Thailand.",
+            "Website Name: Thai Decor Collective",
+            "Website Description: Luxury Thai wedding decorations and event styling for destination weddings, ceremonies and corporate celebrations across Thailand.",
             f"Website Language: {SITE_LANGUAGE}",
             f"Country: {SITE_COUNTRY}",
             f"Primary Industry: {PRIMARY_INDUSTRY}",
@@ -240,11 +238,11 @@ def ai_summary_block() -> str:
         [
             "## AI Summary",
             "",
-            "Who we are: Thai Decor Collective and Thai Event Collective are sister brands delivering luxury décor and end-to-end event management in Thailand.",
-            "What we do: We design Thai wedding decorations, floral installations, stages and backdrops, and plan destination weddings, corporate events, conferences, product launches and event production.",
-            "Industries served: Weddings, hospitality, corporate/MICE, brand activations, tourism and lifestyle celebrations.",
-            "Countries served: Thailand (Bangkok, Phuket and destination venues nationwide), supporting international clients hosting events in Thailand.",
-            "Primary expertise: Traditional and luxury Thai décor, destination wedding planning, corporate event management and on-site production.",
+            "Who we are: Thai Decor Collective designs luxury Thai-inspired event decoration and wedding styling in Thailand. Sister firm Thai Event Collective (https://thaievent.co/) handles full-service planning and production.",
+            "What we do: Thai wedding decorations, floral installations, stages and backdrops for destination weddings, ceremonies and corporate occasions.",
+            "Industries served: Weddings, hospitality, corporate celebrations, tourism and lifestyle events.",
+            "Countries served: Thailand (Phuket, Bangkok and destination venues nationwide), supporting international clients hosting events in Thailand.",
+            "Primary expertise: Traditional and luxury Thai décor, floral design, stage and backdrop styling.",
             "Target audience: Couples, corporate hosts, wedding planners, hotels, venues, photographers and tourism partners.",
             "",
         ]
@@ -252,77 +250,60 @@ def ai_summary_block() -> str:
 
 
 def render_llms_txt(pages: List[Page], generated: str) -> str:
-    by_path = {p.path: p for p in pages}
     decor_services = sorted(
         [p for p in pages if p.path.startswith("/decor/")],
         key=lambda p: p.path,
     )[:MAX_PER_SECTION]
-    event_services = sorted(
-        [p for p in pages if p.path.startswith("/events/") and not path_contains(p, "faq", "partners")],
-        key=lambda p: p.path,
-    )[:MAX_PER_SECTION]
 
     lines = [
-        "# Thai Decor Collective & Thai Event Collective",
+        "# Thai Decor Collective",
         "",
-        "> Luxury Thai wedding decorations and full-service event planning for destination weddings, corporate events and celebrations across Thailand.",
+        "> Luxury Thai wedding decorations, traditional Thai décor, floral design and destination wedding styling across Thailand. Sister company: Thai Event Collective (https://thaievent.co/).",
         "",
         metadata_block(generated).rstrip(),
         "",
         "## About",
         f"{BASE_URL}/",
-        f"{BASE_URL}/thai-event-collective.html",
         f"{BASE_URL}/media-kit.html",
         "",
         "## Services",
         f"{BASE_URL}/#services",
-        f"{BASE_URL}/thai-event-collective.html#services",
         "",
         "### Thai Decor Collective",
     ]
     for p in decor_services:
         lines.append(f"- {p.absolute_url} — {p.title}")
 
-    lines.extend(["", "### Thai Event Collective"])
-    for p in event_services:
-        lines.append(f"- {p.absolute_url} — {p.title}")
-
     lines.extend(
         [
+            "",
+            "## Sister company",
+            "- Thai Event Collective: https://thaievent.co/",
             "",
             "## Main Topics Covered",
             "- Thai wedding decorations",
             "- Traditional Thai décor",
             "- Luxury and destination wedding décor",
             "- Floral decorations, backdrop and stage design",
-            "- Thai event planning and destination weddings",
-            "- Corporate events, MICE, conferences and product launches",
-            "- Event production and brand activation",
             "",
             "## Important Pages",
-            f"- Home (Decor): {BASE_URL}/",
-            f"- Home (Events): {BASE_URL}/thai-event-collective.html",
-            f"- Partners (Decor): {BASE_URL}/partners.html",
-            f"- Partners (Events): {BASE_URL}/events/partners.html",
+            f"- Home: {BASE_URL}/",
+            f"- Partners: {BASE_URL}/partners.html",
             f"- Media Kit: {BASE_URL}/media-kit.html",
-            f"- FAQ (Decor): {BASE_URL}/faq.html",
-            f"- FAQ (Events): {BASE_URL}/events/faq.html",
+            f"- FAQ: {BASE_URL}/faq.html",
+            "- Sister (Events): https://thaievent.co/",
             "",
             "## Knowledge Resources",
             f"{BASE_URL}/faq.html",
-            f"{BASE_URL}/events/faq.html",
             f"{BASE_URL}/media-kit.html",
             f"{BASE_URL}/partners.html",
-            f"{BASE_URL}/events/partners.html",
             "",
             "## Case Studies",
             "Gallery and past-event showcases are featured on:",
             f"{BASE_URL}/#gallery",
-            f"{BASE_URL}/thai-event-collective.html#gallery",
             "",
             "## Contact",
             f"{BASE_URL}/#contact",
-            f"{BASE_URL}/thai-event-collective.html#contact",
             "Email: team@thaidecor.co",
             "Phone: +66 81-149-0924",
             "",
@@ -330,7 +311,7 @@ def render_llms_txt(pages: List[Page], generated: str) -> str:
             f"{BASE_URL}/sitemap.xml",
             f"{BASE_URL}/image-sitemap.xml",
             "",
-            f"## Last Updated",
+            "## Last Updated",
             generated,
             "",
             ai_summary_block().rstrip(),
@@ -388,7 +369,7 @@ def render_llms_full_txt(pages: List[Page], generated: str) -> str:
 
 
 def write_utf8(path: Path, content: str) -> None:
-    path.write_text(content, encoding="utf-8", newline="\n")
+    path.write_text(content, encoding="utf-8")
 
 
 def main() -> int:

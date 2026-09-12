@@ -6,7 +6,7 @@
 
 **Thai Event Collective** — full-service Thai event planner and sister firm; destination weddings, corporate events, MICE, product launches, conferences, exhibitions, brand activations, and event production.
 
-Together they operate under the shared domain **thaidecor.co**.
+Thai Decor Collective operates at **thaidecor.co**. Sister company Thai Event Collective operates at **thaievent.co**.
 
 ---
 
@@ -163,12 +163,12 @@ Press / partner subject line suggestion: *Media feature / Partner collaboration 
 ## Website
 
 - Thai Decor Collective: https://thaidecor.co/
-- Thai Event Collective: https://thaidecor.co/thai-event-collective.html
+- Thai Event Collective: https://thaievent.co/
 - Media kit: https://thaidecor.co/media-kit.html
 - Decor partners: https://thaidecor.co/partners.html
-- Event partners: https://thaidecor.co/events/partners.html
+- Event partners: https://thaievent.co/events/partners.html
 - Decor FAQ: https://thaidecor.co/faq.html
-- Event FAQ: https://thaidecor.co/events/faq.html
+- Event FAQ: https://thaievent.co/events/faq.html
 
 ---
 
